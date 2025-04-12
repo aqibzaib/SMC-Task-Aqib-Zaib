@@ -163,6 +163,63 @@ const NetworkSection: React.FC = () => {
           </p>
         </div>
       </div>
+      {/* 2-Column Layout */}
+      <div className="grid md:grid-cols-[61.28%_34.72%] gap-[30px] mt-[83px] max-w-[1250px] mx-auto">
+        {/* Left Column: Video + Stats */}
+        <div className="flex flex-col gap-6">
+          {/* Video Block */}
+          <div className="my-[10px] bg-[#ddd] h-[431px] rounded-[20px] overflow-hidden">
+            <video
+              className="w-full h-full object-cover "
+              src="https://smbf.global/wp-content/uploads/2023/07/SaveTube.io-SMBF-Promotional-Video-480p.mp4"
+              poster="https://smbf.global/wp-content/uploads/2023/07/SMBF.png"
+              controls
+              preload="metadata"
+              controlsList="nodownload"
+            />
+          </div>
+
+          {/* Stats Section */}
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Stat 1 */}
+            <div className="bg-white p-6 rounded-[20px]">
+              <h3 className="text-[#082C63] text-[24px] font-bold">£10M+</h3>
+              <p className="text-[#575A5F] font-medium mt-2">
+                Facilitated Trade
+              </p>
+              <p className="text-gray-500 text-sm mt-1">
+                Over 8 figures facilitated in international trade, boosting the
+                Muslim economy.
+              </p>
+            </div>
+
+            {/* Stat 2 */}
+            <div className="bg-white p-6 rounded-[20px]">
+              <h3 className="text-[#082C63] text-[24px] font-bold">12+</h3>
+              <p className="text-[#575A5F] font-medium mt-2">Countries</p>
+              <p className="text-gray-500 text-sm mt-1">
+                A thriving network of Muslim businesses and professionals across
+                12 countries.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Column: Tall Block */}
+        <img
+          className="object-cover bg-[#ccc] h-full rounded-[20px] flex items-center justify-center text-center text-gray-700 font-semibold text-xl"
+          src="https://smbf.global/wp-content/uploads/2024/07/9.png"
+        />
+      </div>
+
+      {/* CTA Button */}
+      <div className="flex justify-center md:justify-end mt-8">
+        <a href="#learnmore1">
+          <button className="bg-white text-[#082C63] font-semibold py-3 px-6 rounded-full hover:shadow-lg transition">
+            View Member Benefits →
+          </button>
+        </a>
+      </div>
     </div>
   );
 };
