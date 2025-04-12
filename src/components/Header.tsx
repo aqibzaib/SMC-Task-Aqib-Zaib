@@ -23,20 +23,20 @@ export default function Header() {
         <nav className="hidden md:flex justify-between space-x-4 col-span-8 border border-red-900">
           <a
             href="/our-vision"
-            className="font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+            className="font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD] group"
           >
             Our Vision
           </a>
 
           <div className="relative group">
-            <span className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]">
+            <span className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] group-hover:text-[#2366CD]">
               Member Benefits ▾
             </span>
             <ul className="absolute hidden group-hover:flex flex-col bg-white rounded-lg py-3 px-4 space-y-3 shadow-xl mt-2 z-50 min-w-[220px] opacity-90 border border-grey-50">
               <li>
                 <a
                   href="/business-membership"
-                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
                 >
                   Business Membership
                 </a>
@@ -44,7 +44,7 @@ export default function Header() {
               <li>
                 <a
                   href="/executive-membership"
-                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
                 >
                   Executive Membership
                 </a>
@@ -52,7 +52,7 @@ export default function Header() {
               <li>
                 <a
                   href="/youth-membership"
-                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
                 >
                   Youth Membership
                 </a>
@@ -62,19 +62,19 @@ export default function Header() {
 
           <a
             href="/events"
-            className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+            className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD] group"
           >
             Events
           </a>
 
           <div className="relative group">
-            <span className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]">
+            <span className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] group-hover:text-[#2366CD]">
               International Trade ▾
             </span>
             <ul className="absolute hidden group-hover:flex flex-col bg-white rounded-lg py-3 px-4 space-y-3 shadow-xl mt-2 z-50 min-w-[220px] opacity-90 border border-grey-10">
               <li>
                 <a
-                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
                   href="/executive-international-membership"
                 >
                   Executive Intl. Membership
@@ -82,7 +82,7 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
                   href="/saudi-arabia-international-trade-programme"
                 >
                   Saudi Arabia Trade
@@ -90,7 +90,7 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
                   href="/france-business-delegation-2025"
                 >
                   France 2025
@@ -98,7 +98,7 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
                   href="/smbf-turkiye-international-trade-programme"
                 >
                   Türkiye Trade
@@ -106,7 +106,7 @@ export default function Header() {
               </li>
               <li>
                 <a
-                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
                   href="/dubai-business-delegation"
                 >
                   Dubai 2024
@@ -116,7 +116,7 @@ export default function Header() {
           </div>
 
           <a
-            className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+            className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD] group"
             href="/support-our-growth"
           >
             Support Us
