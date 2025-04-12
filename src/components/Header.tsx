@@ -7,7 +7,10 @@ export default function Header() {
       <header className="grid grid-cols-1 md:grid-cols-12 items-center  gap-4 p-4">
         {/* Logo */}
         <div className="flex justify-start border border-red-900 col-span-2">
-          <a href="https://smbf.global">
+          <a
+            className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+            href="https://smbf.global"
+          >
             <img
               src="https://smbf.global/wp-content/uploads/2023/07/SMBF_Logo.png"
               alt="SMBF Logo"
@@ -18,71 +21,120 @@ export default function Header() {
 
         {/* Navigation Menu */}
         <nav className="hidden md:flex justify-between space-x-4 col-span-8 border border-red-900">
-          <a href="/our-vision" className="font-redtone">
+          <a
+            href="/our-vision"
+            className="font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+          >
             Our Vision
           </a>
 
           <div className="relative group">
-            <span className="cursor-pointer">Member Benefits ▾</span>
+            <span className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]">
+              Member Benefits ▾
+            </span>
             <ul className="absolute hidden group-hover:block bg-white shadow-md rounded p-2 space-y-2 mt-1 z-10">
               <li>
                 <a
                   href="/business-membership"
-                  className="font-redtone text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] pr-[30px] text-[#02171F]"
+                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
                 >
                   Business Membership
                 </a>
               </li>
 
               <li>
-                <a href="/executive-membership">Executive Membership</a>
+                <a
+                  href="/executive-membership"
+                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+                >
+                  Executive Membership
+                </a>
               </li>
               <li>
-                <a href="/youth-membership">Youth Membership</a>
+                <a
+                  href="/youth-membership"
+                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+                >
+                  Youth Membership
+                </a>
               </li>
             </ul>
           </div>
 
-          <a href="/events">Events</a>
+          <a
+            href="/events"
+            className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+          >
+            Events
+          </a>
 
           <div className="relative group">
-            <span className="cursor-pointer">International Trade ▾</span>
+            <span className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]">
+              International Trade ▾
+            </span>
             <ul className="absolute hidden group-hover:block bg-white shadow-md rounded p-2 space-y-2 mt-1 z-10">
               <li>
-                <a href="/executive-international-membership">
+                <a
+                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+                  href="/executive-international-membership"
+                >
                   Executive Intl. Membership
                 </a>
               </li>
               <li>
-                <a href="/saudi-arabia-international-trade-programme">
+                <a
+                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+                  href="/saudi-arabia-international-trade-programme"
+                >
                   Saudi Arabia Trade
                 </a>
               </li>
               <li>
-                <a href="/france-business-delegation-2025">France 2025</a>
+                <a
+                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+                  href="/france-business-delegation-2025"
+                >
+                  France 2025
+                </a>
               </li>
               <li>
-                <a href="/smbf-turkiye-international-trade-programme">
+                <a
+                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+                  href="/smbf-turkiye-international-trade-programme"
+                >
                   Türkiye Trade
                 </a>
               </li>
               <li>
-                <a href="/dubai-business-delegation">Dubai 2024</a>
+                <a
+                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+                  href="/dubai-business-delegation"
+                >
+                  Dubai 2024
+                </a>
               </li>
             </ul>
           </div>
 
-          <a href="/support-our-growth">Support Us</a>
+          <a
+            className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+            href="/support-our-growth"
+          >
+            Support Us
+          </a>
         </nav>
 
         {/* Auth Buttons */}
         <div className="hidden md:flex justify-end items-center space-x-4 col-span-2">
-          <a href="/login" className="text-sm font-medium hover:underline">
+          <a
+            className="bg-[#94baf16] px-[0px] text-[#134A9E] border-none rounded-full text-[15px]"
+            href="/login"
+          >
             Log In
           </a>
           <a
             href="/register"
-            className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded text-sm font-medium hover:opacity-90"
+            className="bg-transparent px-[25px] py-[12px] font-inter text-[14px] font-semibold uppercase leading-[1em] tracking-[0.1em] text-[#FFFFFF] bg-gradient-to-r from-[#3A97A4] to-[#2366CD] border-none rounded-[12px]"
           >
             SIGN UP
           </a>
