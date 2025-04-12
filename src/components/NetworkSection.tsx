@@ -183,11 +183,13 @@ const NetworkSection: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-6">
             {/* Stat 1 */}
             <div className="bg-white p-6 rounded-[20px]">
-              <h3 className="text-[#082C63] text-[24px] font-bold">£10M+</h3>
-              <p className="text-[#575A5F] font-medium mt-2">
+              <p className="text-[#2366CD] font-inter font-bold leading-[27.2px]font-normal tracking-normal text-[28px]">
+                £10M+
+              </p>
+              <p className="text-[#575a5f] font-redtone text-[21px]  font-medium ">
                 Facilitated Trade
               </p>
-              <p className="text-gray-500 text-sm mt-1">
+              <p className="mt-[19px] text-[#0000008A] font-inter text-base font-normal leading-[1.7em]">
                 Over 8 figures facilitated in international trade, boosting the
                 Muslim economy.
               </p>
@@ -195,9 +197,13 @@ const NetworkSection: React.FC = () => {
 
             {/* Stat 2 */}
             <div className="bg-white p-6 rounded-[20px]">
-              <h3 className="text-[#082C63] text-[24px] font-bold">12+</h3>
-              <p className="text-[#575A5F] font-medium mt-2">Countries</p>
-              <p className="text-gray-500 text-sm mt-1">
+              <h3 className="text-[#2366CD] font-inter font-bold leading-[27.2px]font-normal tracking-normal text-[28px]">
+                12+
+              </h3>
+              <p className="text-[#575a5f] font-redtone text-[21px] font-medium ">
+                Countries
+              </p>
+              <p className="mt-[19px] text-[#0000008A] font-inter text-base font-normal leading-[1.7em]">
                 A thriving network of Muslim businesses and professionals across
                 12 countries.
               </p>
@@ -206,19 +212,20 @@ const NetworkSection: React.FC = () => {
         </div>
 
         {/* Right Column: Tall Block */}
-        <img
-          className="object-cover bg-[#ccc] h-full rounded-[20px] flex items-center justify-center text-center text-gray-700 font-semibold text-xl"
-          src="https://smbf.global/wp-content/uploads/2024/07/9.png"
-        />
-      </div>
-
-      {/* CTA Button */}
-      <div className="flex justify-center md:justify-end mt-8">
-        <a href="#learnmore1">
-          <button className="bg-white text-[#082C63] font-semibold py-3 px-6 rounded-full hover:shadow-lg transition">
-            View Member Benefits →
-          </button>
-        </a>
+        <div className="relative">
+          <img
+            className="object-cover bg-[#ccc] h-full rounded-[20px] flex items-center justify-center text-center text-gray-700 font-semibold text-xl"
+            src="https://smbf.global/wp-content/uploads/2024/07/9.png"
+          />
+          {/* CTA Button */}
+          <div className="flex justify-center md:justify-end mt-8 absolute bottom-[30px] right-[10px]">
+            <a href="#learnmore1">
+              <button className="bg-white text-[#082C63] font-semibold py-3 px-6 rounded-full hover:shadow-lg transition">
+                View Member Benefits →
+              </button>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
