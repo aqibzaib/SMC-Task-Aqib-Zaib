@@ -3,10 +3,10 @@ import Container from "./common/Container";
 
 export default function Header() {
   return (
-    <Container className="border border-red-900">
-      <header className="grid grid-cols-1 md:grid-cols-12 items-center  gap-4 p-4">
+    <Container className="">
+      <header className="grid grid-cols-1 md:grid-cols-12 items-center  gap-4 py-4 justify-center">
         {/* Logo */}
-        <div className="flex justify-start border border-red-900 col-span-2">
+        <div className="flex justify-start  col-span-2">
           <a
             className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
             href="https://smbf.global"
@@ -20,7 +20,7 @@ export default function Header() {
         </div>
 
         {/* Navigation Menu */}
-        <nav className="hidden md:flex justify-between space-x-4 col-span-8 border border-red-900">
+        <nav className="hidden md:flex justify-between items-center space-x-4 col-span-8 ">
           <a
             href="/our-vision"
             className="font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD] group"
