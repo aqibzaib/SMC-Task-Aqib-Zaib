@@ -84,10 +84,16 @@ const NetworkSection: React.FC = () => {
     <>
       <div className="relative w-full overflow-hidden">
         {/* Gradient background */}
-        <div className="absolute inset-0 bg-[linear-gradient(221deg,_rgb(35,102,205)_0%,_rgb(58,151,164)_100%)]"></div>
+        <div
+          className="absolute inset-0 bg-[linear-gradient(221deg,_rgb(35,102,205)_0%,_rgb(58,151,164)_100%)]"
+          style={{ borderRadius: "0% 0% 60% 40%  / 0% 0% 5% 5%" }}
+        ></div>
 
         {/* Wave image overlay */}
-        <div className="absolute inset-0 bg-[url('https://smbf.global/wp-content/uploads/2023/07/wave-shape-overlay.png')] bg-repeat bg-contain bg-[left_top,left_bottom] opacity-10 "></div>
+        <div
+          className="absolute inset-0 bg-[url('https://smbf.global/wp-content/uploads/2023/07/wave-shape-overlay.png')] bg-repeat bg-contain bg-[left_top,left_bottom] opacity-10 "
+          style={{ borderRadius: "0% 0% 60% 40%  / 0% 0% 5% 5%" }}
+        ></div>
 
         {/* Content goes here */}
         <div className="relative z-10 text-white p-8 py-16 px-8 ">
