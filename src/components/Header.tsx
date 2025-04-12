@@ -32,7 +32,7 @@ export default function Header() {
             <span className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]">
               Member Benefits ▾
             </span>
-            <ul className="absolute hidden group-hover:block bg-white shadow-md rounded p-2 space-y-2 mt-1 z-10">
+            <ul className="absolute hidden group-hover:flex flex-col bg-white rounded-lg py-3 px-4 space-y-3 shadow-xl mt-2 z-50 min-w-[220px] opacity-90 border border-grey-50">
               <li>
                 <a
                   href="/business-membership"
@@ -41,7 +41,6 @@ export default function Header() {
                   Business Membership
                 </a>
               </li>
-
               <li>
                 <a
                   href="/executive-membership"
@@ -72,7 +71,7 @@ export default function Header() {
             <span className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]">
               International Trade ▾
             </span>
-            <ul className="absolute hidden group-hover:block bg-white shadow-md rounded p-2 space-y-2 mt-1 z-10">
+            <ul className="absolute hidden group-hover:flex flex-col bg-white rounded-lg py-3 px-4 space-y-3 shadow-xl mt-2 z-50 min-w-[220px] opacity-90 border border-grey-10">
               <li>
                 <a
                   className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
