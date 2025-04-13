@@ -59,6 +59,19 @@ const Members = () => {
           </div>
         ))}
       </div>
+      {/* Bottom curve */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
+        <svg
+          viewBox="0 0 1440 150"
+          className="w-full h-[100px] "
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0 C480,100 960,100 1440,0 L1440,150 L0,150 Z"
+            fill="#ffffff"
+          />
+        </svg>
+      </div>
     </section>
   );
 };

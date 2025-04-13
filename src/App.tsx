@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Members from "./components/Members";
 import Membership from "./components/Membership";
 import NetworkSection from "./components/NetworkSection";
+import SmbfSupportSection from "./components/SmbfSupportSection";
 import VisionHighlight from "./components/VisionHighlight";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <BusinessCommunitySection />
       <Membership />
       <Members />
+      <SmbfSupportSection />
       <Footer />
     </>
   );
