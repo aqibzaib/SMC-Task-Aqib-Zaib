@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Membership from "./components/Membership";
 import NetworkSection from "./components/NetworkSection";
+import TailwindCard from "./components/TailwindCard";
 import VisionHighlight from "./components/VisionHighlight";
 
 function App() {
