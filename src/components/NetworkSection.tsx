@@ -101,7 +101,7 @@ const NetworkSection: React.FC = () => {
             <div className="max-w-[1250px] mx-auto grid grid-cols-1 md:grid-cols-[650px_1fr] gap-10 md:gap-[75px] items-center ">
               {/* Left Column - Heading */}
               <div className="">
-                <h1 className="font-redtone text-white text-[60px] md:text-[100px] leading-tight md:leading-[84px] w-[650px]">
+                <h1 className="font-redtone text-white text-[60px] md:text-[100px] leading-tight md:leading-[84px] w-[650px] tracking-[-1px] [text-shadow:0px_5px_15px_rgba(0,0,0,0.16)] font-medium ">
                   Your Global Muslim Business Network
                 </h1>
               </div>
@@ -111,7 +111,7 @@ const NetworkSection: React.FC = () => {
                 {/* Profile + Network Card */}
                 <div className="grid grid-cols-2">
                   <div className="text-center ">
-                    <div className="bg-white shadow-xl p-6 items-center flex flex-row justify-around w-[476px]  rounded-[20px]">
+                    <div className="bg-white shadow-xl py-[19px] items-center flex flex-row justify-start gap-[44px] w-[476px]  rounded-[20px] pl-[30px]">
                       <div className="flex flex-row ">
                         <div className="flex justify-center">
                           <a href="https://www.linkedin.com/in/adam-kiani-25687964/">
