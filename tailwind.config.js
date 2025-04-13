@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      transitionProperty: {
+        height: "height",
+      },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         redtone: ["Redtone", "sans-serif"],
