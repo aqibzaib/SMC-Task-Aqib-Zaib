@@ -1,3 +1,4 @@
+import AutoPlaySlider from "./AutoPlayerSlider";
 import FAQAndServices from "./FAQ";
 
 const Membership = () => {
@@ -21,40 +22,15 @@ const Membership = () => {
         </div>
       </div>
 
-      <div
-        className="
-  border 
-  border-[#2366CD4D] 
- bg-transparent bg-gradient-to-b from-[#F2F7FF] to-[#F7FAFF] 
-  duration-300 
-  mt-[40px] 
-  mb-0 
-  p-[50px]
-  rounded-[20px]
-"
-      >
+      <div className="border  border-[#2366CD4D] bg-transparent bg-gradient-to-b from-[#F2F7FF] to-[#F7FAFF] duration-300  mt-[40px]  mb-0  p-[50px] rounded-[20px]">
         <FAQAndServices />
 
-        <div className="flex justify-center gap-12 mt-12 mb-8">
-          <img
-            src="/logos/im.png"
-            alt="Muslim International Markets"
-            className="h-10 md:h-14"
-          />
-          <img
-            src="/logos/vb.png"
-            alt="Muslim Venture Builder"
-            className="h-10 md:h-14"
-          />
-          <img
-            src="/logos/mi.png"
-            alt="Muslim Invest"
-            className="h-10 md:h-14"
-          />
+        <div className="py-[74px] my-[15px] max-w-[1250px] ">
+          <AutoPlaySlider />
         </div>
 
         <div className="flex justify-center">
-          <button className="bg-gradient-to-r from-teal-400 to-blue-600 text-white font-semibold px-6 py-2 rounded-xl shadow-md hover:shadow-lg transition-all">
+          <button className="text-white py-[9px] max-w-[450px] w-full rounded-[12px] transition-all font-dm-sans text-[18px] font-bold uppercase leading-[1em] tracking-[0.1em] bg-gradient-to-br from-[#3A97A4] to-[#2366CD] shadow-[0_0_10px_0_rgba(255,255,255,0.5)] hover:shadow-[0_0_15px_0_rgba(255,255,255,0.6)] border-none">
             BECOME A MEMBER
           </button>
         </div>
