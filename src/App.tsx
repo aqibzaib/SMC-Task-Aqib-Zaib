@@ -1,3 +1,4 @@
+import BusinessCommunitySection from "./components/BusinessCommunitySection";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import NetworkSection from "./components/NetworkSection";
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <NetworkSection />
       <VisionHighlight />
+      <BusinessCommunitySection />
       <Footer />
     </>
   );

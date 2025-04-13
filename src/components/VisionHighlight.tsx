@@ -1,4 +1,5 @@
 import React from "react";
+import GradientButton from "./common/GradientButton";
 
 const VisionHighlight: React.FC = () => {
   return (
@@ -24,17 +25,7 @@ const VisionHighlight: React.FC = () => {
             the market of Medinah, which was the world’s first tax-free zone.
           </p>
           <div className="mt-8">
-            <a
-              href="#learnmore1"
-              className="text-center inline-block w-[243px] px-[25px] py-[12px] text-white text-[15px] font-bold uppercase leading-[1em] tracking-[0.1em] rounded-[12px] shadow-[0_0_10px_rgba(255,255,255,0.5)]"
-              style={{
-                backgroundImage:
-                  "linear-gradient(139deg, #3A97A4 0%, #2366CD 91%)",
-                fontFamily: "'DM Sans', sans-serif",
-              }}
-            >
-              Learn More
-            </a>
+            <GradientButton href="#learnmore1">Learn More</GradientButton>
           </div>
         </div>
 
