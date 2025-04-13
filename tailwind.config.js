@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         redtone: ["Redtone", "sans-serif"],
+        "dm-sans": ['"DM Sans"', "sans-serif"],
       },
     },
   },

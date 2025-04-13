@@ -238,7 +238,7 @@ const NetworkSection: React.FC = () => {
                 {/* CTA Button */}
                 <div className="flex justify-center md:justify-end mt-8 absolute bottom-[30px] right-[10px]">
                   <a href="#learnmore1">
-                    <button className="bg-white text-[#082C63] font-semibold py-3 px-6 rounded-full hover:shadow-lg transition">
+                    <button className="font-dm-sans bg-white text-[#082C63] font-semibold py-3 px-6 rounded-full hover:shadow-lg hover:bg-[#2366cd] hover:text-white transition-all duration-300 ease-in-out">
                       View Member Benefits →
                     </button>
                   </a>
