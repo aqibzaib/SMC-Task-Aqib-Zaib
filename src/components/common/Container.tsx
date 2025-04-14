@@ -8,7 +8,7 @@ export default function Container({
   className?: string;
 }) {
   return (
-    <section className={`${className} max-w-[1250px] mx-auto`}>
+    <section className={`${className} mx-auto max-w-[1250px]`}>
       {children}
     </section>
   );

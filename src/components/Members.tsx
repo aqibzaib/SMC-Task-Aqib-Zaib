@@ -20,12 +20,12 @@ const members = [
 
 const Members = () => {
   return (
-    <section className="relative bg-blue-50 pb-[96px] pt-[140px] px-4 ">
+    <section className="relative bg-blue-50 px-4 pb-[96px] pt-[140px]">
       {/* Top curve */}
-      <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+      <div className="absolute left-0 top-0 w-full overflow-hidden leading-[0]">
         <svg
           viewBox="0 0 1440 150"
-          className="w-full h-[100px]"
+          className="h-[100px] w-full"
           preserveAspectRatio="none"
         >
           <path
@@ -35,25 +35,25 @@ const Members = () => {
         </svg>
       </div>
 
-      <div className="max-w-[1250px] mx-auto">
-        <h2 className=" font-medium leading-[1em] font-redtone text-[64px] text-center text-[#082C63] mb-[25px]">
+      <div className="mx-auto max-w-[1250px]">
+        <h2 className="mb-[25px] text-center font-redtone text-[64px] font-medium leading-[1em] text-[#082C63]">
           Some of Our Members
         </h2>
-        <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[10px] px-[44px]">
+        <div className="mx-auto grid grid-cols-1 gap-[10px] px-[44px] sm:grid-cols-2 lg:grid-cols-3">
           {members.map((member, index) => (
             <div key={member.name} className="relative">
               <img
                 src={member.image}
                 alt={member.name}
-                className={`max-w-[370px] h-[412px] rounded-3xl mb-6 ${
+                className={`mb-6 h-[412px] max-w-[370px] rounded-3xl ${
                   index != 0 ? "object-cover" : ""
                 }`}
               />
-              <div className="max-w-[330px] absolute bottom-11 px-4 bg-white/30 backdrop-blur-md bg-opacity-70 text-white rounded-2xl py-2 w-full left-1/2 transform -translate-x-1/2">
-                <h3 className="text-[42px] text-center font-redtone capitalize font-semibold m-0 p-0 leading-none">
+              <div className="absolute bottom-11 left-1/2 w-full max-w-[330px] -translate-x-1/2 transform rounded-2xl bg-white/30 bg-opacity-70 px-4 py-2 text-white backdrop-blur-md">
+                <h3 className="m-0 p-0 text-center font-redtone text-[42px] font-semibold capitalize leading-none">
                   {member.name}
                 </h3>
-                <p className="text-center text-[18px] m-0 p-0 font-redtone leading-tight">
+                <p className="m-0 p-0 text-center font-redtone text-[18px] leading-tight">
                   {member.title}
                 </p>
               </div>
@@ -65,7 +65,7 @@ const Members = () => {
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
         <svg
           viewBox="0 0 1440 150"
-          className="w-full h-[100px] "
+          className="h-[100px] w-full"
           preserveAspectRatio="none"
         >
           <path

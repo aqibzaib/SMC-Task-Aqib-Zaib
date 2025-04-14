@@ -45,7 +45,7 @@ const ExpandableList: React.FC<{
   };
 
   return (
-    <div className="grid md:grid-cols-2 gap-6 items-start">
+    <div className="grid items-start gap-6 md:grid-cols-2">
       {items.map((item, index) => {
         const isOpen =
           index % 2 === 0
@@ -55,19 +55,19 @@ const ExpandableList: React.FC<{
         return (
           <div
             key={index}
-            className="mb-[10px]  border border-[#2366CD94] rounded-[10px] bg-white  transition-all duration-300"
+            className="mb-[10px] rounded-[10px] border border-[#2366CD94] bg-white transition-all duration-300"
           >
             <button
               onClick={() => toggleItem(index)}
-              className={`w-full text-left px-5 py-4 flex justify-between items-center rounded-[10px] font-medium text-lg focus:outline-none ${
+              className={`flex w-full items-center justify-between rounded-[10px] px-5 py-4 text-left text-lg font-medium focus:outline-none ${
                 isOpen
-                  ? "bg-custom-gradient text-white transition-all ease-in-out duration-300"
+                  ? "bg-custom-gradient text-white transition-all duration-300 ease-in-out"
                   : ""
               }`}
             >
               <span
-                className={`font-bold font-inter text-[16px] leading-[1.7em]  ${
-                  isOpen ? "text-white" : "text-[#575A5F] "
+                className={`font-inter text-[16px] font-bold leading-[1.7em] ${
+                  isOpen ? "text-white" : "text-[#575A5F]"
                 }`}
               >
                 {item.title}
@@ -77,8 +77,8 @@ const ExpandableList: React.FC<{
               </span>
             </button>
             <div
-              className={` text-[#0000008A] font-inter text-[16px] font-normal leading-[1.7em] transition-all duration-300 overflow-hidden pr-[40px]  pl-[25px] ${
-                isOpen ? "max-h-[1000px] pb-[20px] pt-[20px] " : "max-h-0"
+              className={`overflow-hidden pl-[25px] pr-[40px] font-inter text-[16px] font-normal leading-[1.7em] text-[#0000008A] transition-all duration-300 ${
+                isOpen ? "max-h-[1000px] pb-[20px] pt-[20px]" : "max-h-0"
               }`}
             >
               {item.content}

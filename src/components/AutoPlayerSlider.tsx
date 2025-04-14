@@ -40,11 +40,11 @@ const AutoPlaySlider: React.FC = () => {
       <Slider {...settings}>
         {images.map((src, index) => (
           <div key={index}>
-            <div className="flex items-center justify-center ">
+            <div className="flex items-center justify-center">
               <img
                 src={src}
                 alt={`Slide ${index + 1}`}
-                className="max-w-[250px] max-h-[94px] padding-[10px]"
+                className="padding-[10px] max-h-[94px] max-w-[250px]"
               />
             </div>
           </div>

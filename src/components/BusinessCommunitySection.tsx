@@ -3,12 +3,12 @@ import GradientButton from "./common/GradientButton";
 
 const BusinessCommunitySection: React.FC = () => {
   return (
-    <section className="relative bg-[#F2F7FF] py-[117px] overflow-hidden">
+    <section className="relative overflow-hidden bg-[#F2F7FF] py-[117px]">
       {/* Top curve */}
-      <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+      <div className="absolute left-0 top-0 w-full overflow-hidden leading-[0]">
         <svg
           viewBox="0 0 1440 150"
-          className="w-full h-[100px]"
+          className="h-[100px] w-full"
           preserveAspectRatio="none"
         >
           <path
@@ -18,22 +18,22 @@ const BusinessCommunitySection: React.FC = () => {
         </svg>
       </div>
 
-      <div className="relative container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-10">
+      <div className="container relative mx-auto flex flex-col items-center gap-10 px-6 md:flex-row md:px-12">
         {/* Image */}
         <div className="w-full md:w-1/2">
           <img
             src="https://smbf.global/wp-content/uploads/2023/07/SMBF-WebPic-1.png"
             alt="Members of the SMBF Muslim Business Community"
-            className="justify-self-end rounded-lg w-full object-cover max-h-[401px] max-w-[503px]"
+            className="max-h-[401px] w-full max-w-[503px] justify-self-end rounded-lg object-cover"
           />
         </div>
 
         {/* Text Content */}
-        <div className="w-full md:w-1/2 text-center md:text-left">
-          <h2 className="max-w-[500px] font-redtone text-[54px] leading-[1em] font-medium  text-[#082C63] mb-6">
+        <div className="w-full text-center md:w-1/2 md:text-left">
+          <h2 className="mb-6 max-w-[500px] font-redtone text-[54px] font-medium leading-[1em] text-[#082C63]">
             Join A Supportive Business Community
           </h2>
-          <p className="pb-[19px] text-gray-500 font-inter text-[18px] font-normal leading-[1.7em]">
+          <p className="pb-[19px] font-inter text-[18px] font-normal leading-[1.7em] text-gray-500">
             We help our members with a wide range of services designed to
             support their business journey. From securing Shariah-compliant
             investments to personalised mentorship for business growth and
@@ -42,7 +42,7 @@ const BusinessCommunitySection: React.FC = () => {
             international expansion. We provide our members with invaluable
             support at every stage.
           </p>
-          <GradientButton href="#" className="mt-[30px] mb-4">
+          <GradientButton href="#" className="mb-4 mt-[30px]">
             Learn More
           </GradientButton>
         </div>
@@ -52,7 +52,7 @@ const BusinessCommunitySection: React.FC = () => {
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
         <svg
           viewBox="0 0 1440 150"
-          className="w-full h-[100px] "
+          className="h-[100px] w-full"
           preserveAspectRatio="none"
         >
           <path

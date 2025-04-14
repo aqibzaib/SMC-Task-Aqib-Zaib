@@ -4,35 +4,35 @@ import Container from "./common/Container";
 export default function Header() {
   return (
     <Container className="">
-      <header className="grid grid-cols-1 md:grid-cols-12 items-center  gap-4 py-4 justify-center">
+      <header className="grid grid-cols-1 items-center justify-center gap-4 py-4 md:grid-cols-12">
         {/* Logo */}
-        <div className="flex justify-start  col-span-2">
+        <div className="col-span-2 flex justify-start">
           <a
-            className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em]  text-[#02171F]"
+            className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F]"
             href="https://smbf.global"
           >
             <img
               src="https://smbf.global/wp-content/uploads/2023/07/SMBF_Logo.png"
               alt="SMBF Logo"
-              className="w-full max-w-[126px] h-[42px]"
+              className="h-[42px] w-full max-w-[126px]"
             />
           </a>
         </div>
 
         {/* Navigation Menu */}
-        <nav className="hidden md:flex justify-between items-center space-x-4 col-span-8 ">
+        <nav className="col-span-8 hidden items-center justify-between space-x-4 md:flex">
           <a
             href="/our-vision"
-            className="font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD] group"
+            className="group font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
           >
             Our Vision
           </a>
 
-          <div className="relative group">
+          <div className="group relative">
             <span className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] group-hover:text-[#2366CD]">
               Member Benefits ▾
             </span>
-            <ul className="absolute hidden group-hover:flex flex-col bg-white rounded-lg py-3 px-4 space-y-3 shadow-xl mt-2 z-50 min-w-[220px] opacity-90 border border-grey-50">
+            <ul className="border-grey-50 absolute z-50 mt-2 hidden min-w-[220px] flex-col space-y-3 rounded-lg border bg-white px-4 py-3 opacity-90 shadow-xl group-hover:flex">
               <li>
                 <a
                   href="/business-membership"
@@ -62,16 +62,16 @@ export default function Header() {
 
           <a
             href="/events"
-            className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD] group"
+            className="group cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
           >
             Events
           </a>
 
-          <div className="relative group">
+          <div className="group relative">
             <span className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] group-hover:text-[#2366CD]">
               International Trade ▾
             </span>
-            <ul className="absolute hidden group-hover:flex flex-col bg-white rounded-lg py-3 px-4 space-y-3 shadow-xl mt-2 z-50 min-w-[220px] opacity-90 border border-grey-10">
+            <ul className="border-grey-10 absolute z-50 mt-2 hidden min-w-[220px] flex-col space-y-3 rounded-lg border bg-white px-4 py-3 opacity-90 shadow-xl group-hover:flex">
               <li>
                 <a
                   className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
@@ -116,7 +116,7 @@ export default function Header() {
           </div>
 
           <a
-            className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD] group"
+            className="group cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
             href="/support-our-growth"
           >
             Support Us
@@ -124,16 +124,16 @@ export default function Header() {
         </nav>
 
         {/* Auth Buttons */}
-        <div className="hidden md:flex justify-end items-center space-x-4 col-span-2">
+        <div className="col-span-2 hidden items-center justify-end space-x-4 md:flex">
           <a
-            className="bg-[#94baf16] px-[0px] text-[#134A9E] border-none rounded-full text-[15px]"
+            className="rounded-full border-none bg-[#94baf16] px-[0px] text-[15px] text-[#134A9E]"
             href="/login"
           >
             Log In
           </a>
           <a
             href="/register"
-            className="bg-transparent px-[25px] py-[12px] font-inter text-[14px] font-semibold uppercase leading-[1em] tracking-[0.1em] text-[#FFFFFF] bg-gradient-to-r from-[#3A97A4] to-[#2366CD] border-none rounded-[12px]"
+            className="rounded-[12px] border-none bg-transparent bg-gradient-to-r from-[#3A97A4] to-[#2366CD] px-[25px] py-[12px] font-inter text-[14px] font-semibold uppercase leading-[1em] tracking-[0.1em] text-[#FFFFFF]"
           >
             SIGN UP
           </a>

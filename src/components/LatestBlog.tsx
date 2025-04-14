@@ -30,12 +30,12 @@ const blogPosts = [
 
 const LatestBlogs: React.FC = () => {
   return (
-    <section className="mt-[68px] relative pt-16 pb-[120px] px-4 text-center max-w-[1250px] bg-blue-50">
+    <section className="relative mt-[68px] max-w-[1250px] bg-blue-50 px-4 pb-[120px] pt-16 text-center">
       {/* Top curve */}
-      <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0]">
+      <div className="absolute left-0 top-0 w-full overflow-hidden leading-[0]">
         <svg
           viewBox="0 0 1440 150"
-          className="w-full h-[100px]"
+          className="h-[100px] w-full"
           preserveAspectRatio="none"
         >
           <path
@@ -45,48 +45,48 @@ const LatestBlogs: React.FC = () => {
         </svg>
       </div>
 
-      <div className="max-w-[1250px] mx-auto">
-        <h2 className="text-4xl font-bold text-[#0a2a66] mb-12"></h2>
-        <h2 className=" font-medium leading-[1em] font-redtone text-[64px] text-center text-[#082C63] mb-10">
+      <div className="mx-auto max-w-[1250px]">
+        <h2 className="mb-12 text-4xl font-bold text-[#0a2a66]"></h2>
+        <h2 className="mb-10 text-center font-redtone text-[64px] font-medium leading-[1em] text-[#082C63]">
           Latest Blogs
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 md:grid-cols-3">
           {blogPosts.map((post, index) => (
-            <div key={index} className=" rounded-xl overflow-hidden ">
+            <div key={index} className="overflow-hidden rounded-xl">
               <div className="relative max-w-[387px]">
                 <img
                   src={post.imageUrl}
                   alt={post.title}
-                  className="w-full h-64 object-cover rounded-xl"
+                  className="h-64 w-full rounded-xl object-cover"
                 />
-                <p className="absolute bottom-1 left-3 bg-[#2eb6b0] text-white text-[12px] font-bold leading-[1em] tracking-[0.1em] font-inter px-[15px] py-2 rounded-full">
+                <p className="absolute bottom-1 left-3 rounded-full bg-[#2eb6b0] px-[15px] py-2 font-inter text-[12px] font-bold leading-[1em] tracking-[0.1em] text-white">
                   {post.category}
                 </p>
               </div>
-              <div className="text-left py-7">
+              <div className="py-7 text-left">
                 <h3
-                  className={`text-[32px] font-redtone leading-8 font-medium text-[#0a2a66] ${
+                  className={`font-redtone text-[32px] font-medium leading-8 text-[#0a2a66] ${
                     post.extraTitle ? "" : "mb-3"
                   }`}
                 >
                   {post.title}
                 </h3>
                 {post.extraTitle && (
-                  <h3 className="text-[32px] font-redtone leading-8 font-medium text-[#0a2a66] mb-3">
+                  <h3 className="mb-3 font-redtone text-[32px] font-medium leading-8 text-[#0a2a66]">
                     {post?.extraTitle}
                   </h3>
                 )}
-                <p className=" text-[#0000008A] font-inter text-[16px] font-normal leading-[1.7em] mb-4">
+                <p className="mb-4 font-inter text-[16px] font-normal leading-[1.7em] text-[#0000008A]">
                   {post.description}
                 </p>
-                <button className="inline-flex items-center justify-center border border-[#0a2a66] text-[#0a2a66] rounded-3xl w-[61px] hover:bg-[#0a2a66] hover:text-white transition duration-300">
+                <button className="inline-flex w-[61px] items-center justify-center rounded-3xl border border-[#0a2a66] text-[#0a2a66] transition duration-300 hover:bg-[#0a2a66] hover:text-white">
                   <MoveRight strokeWidth={"1px"} />
                 </button>
               </div>
             </div>
           ))}
         </div>
-        <button className="bg-[#082C63] hover:bg-[#2366CD] text-white px-[34px] py-[20px] rounded-full border-none shadow-[0px_0px_0px_0px_rgba(0,0,0,0.5)] transition duration-200 font-inter text-[15px] font-bold  uppercase leading-[1em] tracking-[0.1em]">
+        <button className="rounded-full border-none bg-[#082C63] px-[34px] py-[20px] font-inter text-[15px] font-bold uppercase leading-[1em] tracking-[0.1em] text-white shadow-[0px_0px_0px_0px_rgba(0,0,0,0.5)] transition duration-200 hover:bg-[#2366CD]">
           Load More
         </button>
       </div>

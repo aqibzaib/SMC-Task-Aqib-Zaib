@@ -13,17 +13,17 @@ const NetworkSection: React.FC = () => {
 
         {/* Wave image overlay */}
         <div
-          className="absolute inset-0 bg-[url('https://smbf.global/wp-content/uploads/2023/07/wave-shape-overlay.png')] bg-repeat bg-contain bg-[left_top,left_bottom] opacity-10 "
+          className="absolute inset-0 bg-[left_top,left_bottom] bg-[url('https://smbf.global/wp-content/uploads/2023/07/wave-shape-overlay.png')] bg-contain bg-repeat opacity-10"
           style={{ borderRadius: "0% 0% 60% 40%  / 0% 0% 5% 5%" }}
         ></div>
 
         {/* Content goes here */}
-        <div className="relative z-10 text-white p-8 py-16 px-8 ">
+        <div className="relative z-10 p-8 px-8 py-16 text-white">
           <div className=" ">
-            <div className="max-w-[1250px] mx-auto grid grid-cols-1 md:grid-cols-[650px_1fr] gap-10 md:gap-[75px] items-center ">
+            <div className="mx-auto grid max-w-[1250px] grid-cols-1 items-center gap-10 md:grid-cols-[650px_1fr] md:gap-[75px]">
               {/* Left Column - Heading */}
               <div className="">
-                <h1 className="font-redtone text-white text-[60px] md:text-[100px] leading-tight md:leading-[84px] w-[650px] tracking-[-1px] [text-shadow:0px_5px_15px_rgba(0,0,0,0.16)] font-medium ">
+                <h1 className="w-[650px] font-redtone text-[60px] font-medium leading-tight tracking-[-1px] text-white [text-shadow:0px_5px_15px_rgba(0,0,0,0.16)] md:text-[100px] md:leading-[84px]">
                   Your Global Muslim Business Network
                 </h1>
               </div>
@@ -32,9 +32,9 @@ const NetworkSection: React.FC = () => {
               <div className="flex flex-col items-start space-y-6">
                 {/* Profile + Network Card */}
                 <div className="grid grid-cols-2">
-                  <div className="text-center ">
-                    <div className="bg-white shadow-xl py-[19px] items-center flex flex-row justify-start gap-[44px] w-[476px]  rounded-[20px] pl-[30px]">
-                      <div className="flex flex-row ">
+                  <div className="text-center">
+                    <div className="flex w-[476px] flex-row items-center justify-start gap-[44px] rounded-[20px] bg-white py-[19px] pl-[30px] shadow-xl">
+                      <div className="flex flex-row">
                         <div className="flex justify-center">
                           <a href="https://www.linkedin.com/in/adam-kiani-25687964/">
                             <img
@@ -43,7 +43,7 @@ const NetworkSection: React.FC = () => {
                               width="800"
                               height="800"
                               src="https://smbf.global/wp-content/uploads/2024/07/1686184449993.jpeg"
-                              className="w-[55px] border border-white rounded-full shadow-[0px_10px_15px_0px_rgba(0,0,0,0.3)] outline-[#082c63] outline-offset-4  outline-dashed "
+                              className="w-[55px] rounded-full border border-white shadow-[0px_10px_15px_0px_rgba(0,0,0,0.3)] outline-dashed outline-offset-4 outline-[#082c63]"
                               alt="Adam  Kiani"
                             />
                           </a>
@@ -57,7 +57,7 @@ const NetworkSection: React.FC = () => {
                               width="505"
                               height="505"
                               src="https://smbf.global/wp-content/uploads/2024/07/1646230591827.jpeg"
-                              className="w-[55px] border border-white rounded-full shadow-[0px_10px_15px_0px_rgba(0,0,0,0.3)] hover:outline-offset-4 hover:outline-dashed outline-[#082c63]"
+                              className="w-[55px] rounded-full border border-white shadow-[0px_10px_15px_0px_rgba(0,0,0,0.3)] outline-[#082c63] hover:outline-dashed hover:outline-offset-4"
                               alt="Saj Hussain"
                             />
                           </a>
@@ -71,26 +71,26 @@ const NetworkSection: React.FC = () => {
                               width="400"
                               height="400"
                               src="https://smbf.global/wp-content/uploads/2024/07/1704105715631.jpeg"
-                              className="w-[55px] border border-white rounded-full shadow-[0px_10px_15px_0px_rgba(0,0,0,0.3)] hover:outline-offset-4 hover:outline-dashed outline-[#082c63]"
+                              className="w-[55px] rounded-full border border-white shadow-[0px_10px_15px_0px_rgba(0,0,0,0.3)] outline-[#082c63] hover:outline-dashed hover:outline-offset-4"
                               alt="Zha Gumarshad"
                             />
                           </a>
                         </div>
                       </div>
-                      <div className="font-inter  p-0 m-0">
-                        <span className="ml-0 relative text-[28px] font-bold text-[#2366cd]">
+                      <div className="m-0 p-0 font-inter">
+                        <span className="relative ml-0 text-[28px] font-bold text-[#2366cd]">
                           <CountUp end={30000} duration={5} separator=",">
                             {({ countUpRef }) => (
                               <>
                                 <span ref={countUpRef} />
-                                <sup className="absolute text-[#2366cd] text-[52px] font-bold top-[15px] left-[100%] align-super">
+                                <sup className="absolute left-[100%] top-[15px] align-super text-[52px] font-bold text-[#2366cd]">
                                   +
                                 </sup>
                               </>
                             )}
                           </CountUp>
                         </span>
-                        <h2 className=" ml-1 text-[#082c63] font-inter text-[28px] font-normal ">
+                        <h2 className="ml-1 font-inter text-[28px] font-normal text-[#082c63]">
                           Network
                         </h2>
                       </div>
@@ -99,7 +99,7 @@ const NetworkSection: React.FC = () => {
                 </div>
 
                 {/* Description */}
-                <p className="max-w-lg text-[#E0E0E0] font-inter text-base font-medium leading-[1.7em]">
+                <p className="max-w-lg font-inter text-base font-medium leading-[1.7em] text-[#E0E0E0]">
                   SMBF is a global network of high-value Muslim businesses and
                   professionals. We offer unparalleled opportunities, support,
                   and connections to economically empower the Muslim Ummah
@@ -109,13 +109,13 @@ const NetworkSection: React.FC = () => {
             </div>
             {/* 2-Column Layout */}
 
-            <div className="grid md:grid-cols-[61.28%_34.72%] gap-[30px] mt-[83px] max-w-[1250px] mx-auto">
+            <div className="mx-auto mt-[83px] grid max-w-[1250px] gap-[30px] md:grid-cols-[61.28%_34.72%]">
               {/* Left Column: Video + Stats */}
               <div className="flex flex-col gap-6">
                 {/* Video Block */}
-                <div className="my-[10px] bg-[#ddd] h-[431px] rounded-[20px] overflow-hidden">
+                <div className="my-[10px] h-[431px] overflow-hidden rounded-[20px] bg-[#ddd]">
                   <video
-                    className="w-full h-full object-cover "
+                    className="h-full w-full object-cover"
                     src="https://smbf.global/wp-content/uploads/2023/07/SaveTube.io-SMBF-Promotional-Video-480p.mp4"
                     poster="https://smbf.global/wp-content/uploads/2023/07/SMBF.png"
                     controls
@@ -125,30 +125,30 @@ const NetworkSection: React.FC = () => {
                 </div>
 
                 {/* Stats Section */}
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid gap-6 md:grid-cols-2">
                   {/* Stat 1 */}
-                  <div className="bg-white p-6 rounded-[20px]">
-                    <p className="text-[#2366CD] font-inter font-bold leading-[27.2px] tracking-normal text-[28px]">
+                  <div className="rounded-[20px] bg-white p-6">
+                    <p className="font-inter text-[28px] font-bold leading-[27.2px] tracking-normal text-[#2366CD]">
                       <CountUp end={10} duration={2} prefix="£" suffix="M+" />
                     </p>
-                    <p className="text-[#575a5f] font-redtone text-[21px]  font-medium ">
+                    <p className="font-redtone text-[21px] font-medium text-[#575a5f]">
                       Facilitated Trade
                     </p>
-                    <p className="mt-[19px] text-[#0000008A] font-inter text-base font-normal leading-[1.7em]">
+                    <p className="mt-[19px] font-inter text-base font-normal leading-[1.7em] text-[#0000008A]">
                       Over 8 figures facilitated in international trade,
                       boosting the Muslim economy.
                     </p>
                   </div>
 
                   {/* Stat 2 */}
-                  <div className="bg-white p-6 rounded-[20px]">
-                    <h3 className="text-[#2366CD] font-inter font-bold leading-[27.2px] tracking-normal text-[28px]">
+                  <div className="rounded-[20px] bg-white p-6">
+                    <h3 className="font-inter text-[28px] font-bold leading-[27.2px] tracking-normal text-[#2366CD]">
                       <CountUp end={12} duration={2} suffix="+" />
                     </h3>
-                    <p className="text-[#575a5f] font-redtone text-[21px] font-medium ">
+                    <p className="font-redtone text-[21px] font-medium text-[#575a5f]">
                       Countries
                     </p>
-                    <p className="mt-[19px] text-[#0000008A] font-inter text-base font-normal leading-[1.7em]">
+                    <p className="mt-[19px] font-inter text-base font-normal leading-[1.7em] text-[#0000008A]">
                       A thriving network of Muslim businesses and professionals
                       across 12 countries.
                     </p>
@@ -159,13 +159,13 @@ const NetworkSection: React.FC = () => {
               {/* Right Column: Tall Block */}
               <div className="relative">
                 <img
-                  className="object-cover bg-[#ccc] h-full rounded-[20px] flex items-center justify-center text-center text-gray-700 font-semibold text-xl"
+                  className="flex h-full items-center justify-center rounded-[20px] bg-[#ccc] object-cover text-center text-xl font-semibold text-gray-700"
                   src="https://smbf.global/wp-content/uploads/2024/07/9.png"
                 />
                 {/* CTA Button */}
-                <div className="flex justify-center md:justify-end mt-8 absolute bottom-[30px] right-[10px]">
+                <div className="absolute bottom-[30px] right-[10px] mt-8 flex justify-center md:justify-end">
                   <a href="#learnmore1">
-                    <button className="font-dm-sans bg-white text-[#082C63] font-semibold py-3 px-6 rounded-full hover:shadow-lg hover:bg-[#2366cd] hover:text-white transition-all duration-300 ease-in-out">
+                    <button className="rounded-full bg-white px-6 py-3 font-dm-sans font-semibold text-[#082C63] transition-all duration-300 ease-in-out hover:bg-[#2366cd] hover:text-white hover:shadow-lg">
                       View Member Benefits →
                     </button>
                   </a>
