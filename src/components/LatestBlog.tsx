@@ -1,6 +1,8 @@
 // components/LatestBlogs.tsx
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { MoveRight } from "lucide-react";
-import React from "react";
+import React, { useEffect } from "react";
 
 const blogPosts = [
   {
@@ -29,6 +31,11 @@ const blogPosts = [
 ];
 
 const LatestBlogs: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <section className="relative mt-[68px] bg-blue-50 px-4 pb-[120px] pt-16 text-center">
       {/* Top curve */}
@@ -50,7 +57,10 @@ const LatestBlogs: React.FC = () => {
         <h2 className="mb-10 text-center font-redtone text-[64px] font-medium leading-[1em] text-[#082C63]">
           Latest Blogs
         </h2>
-        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 md:grid-cols-3">
+        <div
+          className="mx-auto grid max-w-7xl grid-cols-1 gap-10 md:grid-cols-3"
+          data-aos="fade-up"
+        >
           {blogPosts.map((post, index) => (
             <div key={index} className="overflow-hidden rounded-xl">
               <div className="relative max-w-[387px]">
