@@ -1,10 +1,9 @@
 import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
-import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0B2341] px-8 py-12 text-white">
-      <div className="mx-auto grid max-w-[1250px] grid-cols-1 border border-red-900 pb-[85px] md:grid-cols-2 lg:grid-cols-5">
+    <footer className="bg-[#0B2341] px-8 pt-12 text-white">
+      <div className="mx-auto grid max-w-[1250px] grid-cols-1 pb-[85px] md:grid-cols-2 lg:grid-cols-5">
         {/* Logo and Description */}
         <div className="col-span-2 max-w-[422px] p-[10px]">
           <div className="mb-4 flex items-center space-x-2">
@@ -136,7 +135,7 @@ const Footer = () => {
             <li>
               <a
                 href="#"
-                className="font-inter text-[16px] text-[#757d8c] transition duration-300 hover:text-white"
+                className="font-inter text-[16px] text-[#99A2B1] transition duration-300 hover:text-white"
               >
                 Terms & Conditions
               </a>
@@ -168,7 +167,7 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      <div className="mt-12 text-center text-sm text-gray-400">
+      <div className="mt-12 text-end font-inter text-[14px] font-normal tracking-[0.05em] text-white">
         Copyright SMBF © 2025. All Rights Reserved.
       </div>
     </footer>
