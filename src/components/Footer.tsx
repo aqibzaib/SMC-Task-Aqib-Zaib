@@ -18,7 +18,7 @@ const Footer = () => {
               srcset="https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white-1024x342.png 1024w, https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white-300x100.png 300w, https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white-768x257.png 768w, https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white-600x201.png 600w, https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white.png 1071w"
             />
           </div>
-          <p className="text-gray-300">
+          <p className="font-inter text-[16px] text-[#99A2B1] transition duration-300">
             Supporting Muslim businesses, through ethical and meaningful
             collaboration, to positively impact the world.
           </p>
@@ -64,56 +64,105 @@ const Footer = () => {
 
         {/* Menu */}
         <div className="p-[10px]">
-          <h3 className="mb-4 font-semibold tracking-widest text-white">
+          <h3 className="mb-4 font-[Redtone] text-[20px] font-normal uppercase tracking-[0.1em] text-white">
             MENU
           </h3>
           <ul className="space-y-3 text-gray-300">
             <li>
-              <a href="#">Member Login</a>
+              <a
+                href="#"
+                className="font-inter text-[16px] text-[#99A2B1] transition duration-300 hover:text-white"
+              >
+                Member Login
+              </a>
             </li>
             <li>
-              <a href="#">Our Vision</a>
+              <a
+                href="#"
+                className="font-inter text-[16px] text-[#99A2B1] transition duration-300 hover:text-white"
+              >
+                Our Vision
+              </a>
             </li>
             <li>
-              <a href="#">Member Benefits</a>
+              <a
+                href="#"
+                className="font-inter text-[16px] text-[#99A2B1] transition duration-300 hover:text-white"
+              >
+                Member Benefits
+              </a>
             </li>
             <li>
-              <a href="#">Events</a>
+              <a
+                href="#"
+                className="font-inter text-[16px] text-[#99A2B1] transition duration-300 hover:text-white"
+              >
+                Events
+              </a>
             </li>
             <li>
-              <a href="#">Business Delegations</a>
+              <a
+                href="#"
+                className="font-inter text-[16px] text-[#99A2B1] transition duration-300 hover:text-white"
+              >
+                Business Delegations
+              </a>
             </li>
             <li>
-              <a href="#">Support Us</a>
+              <a
+                href="#"
+                className="font-inter text-[16px] text-[#99A2B1] transition duration-300 hover:text-white"
+              >
+                Support Us
+              </a>
             </li>
           </ul>
         </div>
 
         {/* Links */}
         <div className="p-[10px]">
-          <h3 className="mb-4 font-semibold tracking-widest text-white">
+          <h3 className="mb-4 font-[Redtone] text-[20px] font-normal uppercase tracking-[0.1em] text-white">
             LINKS
           </h3>
           <ul className="space-y-3 text-gray-300">
             <li>
-              <a href="#">Privacy policy</a>
+              <a
+                href="#"
+                className="font-inter text-[16px] text-[#99A2B1] transition duration-300 hover:text-white"
+              >
+                Privacy policy
+              </a>
             </li>
             <li>
-              <a href="#">Terms & Conditions</a>
+              <a
+                href="#"
+                className="font-inter text-[16px] text-[#757d8c] transition duration-300 hover:text-white"
+              >
+                Terms & Conditions
+              </a>
             </li>
             <li>
-              <a href="#">Event Registration Policy</a>
+              <a
+                href="#"
+                className="font-inter text-[16px] text-[#99A2B1] transition duration-300 hover:text-white"
+              >
+                Event Registration Policy
+              </a>
             </li>
           </ul>
         </div>
 
         {/* Contact */}
         <div className="p-[10px]">
-          <h3 className="mb-4 font-semibold tracking-widest text-white">
+          <h3 className="mb-4 font-[Redtone] text-[20px] font-normal uppercase tracking-[0.1em] text-white">
             GET IN TOUCH
           </h3>
-          <p className="mb-2 text-gray-300">0121 820 8259</p>
-          <p className="mb-6 text-gray-300">enquiries@smbf.global</p>
+          <p className="mb-2 font-inter text-[16px] text-[#99A2B1] transition duration-300 hover:text-white">
+            0121 820 8259
+          </p>
+          <p className="mb-6 font-inter text-[16px] text-[#99A2B1] transition duration-300 hover:text-white">
+            enquiries@smbf.global
+          </p>
           <button className="rounded-full bg-gradient-to-r from-[#52B6C5] to-[#2D63D4] px-6 py-2 font-semibold text-white shadow-lg">
             CONTACT US
           </button>
