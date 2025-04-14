@@ -1,4 +1,3 @@
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { MoveRight } from "lucide-react";
@@ -89,8 +88,8 @@ const LatestBlogs: React.FC = () => {
                 <p className="mb-4 font-inter text-[16px] font-normal leading-[1.7em] text-[#0000008A]">
                   {post.description}
                 </p>
-                <button className="inline-flex w-[61px] items-center justify-center rounded-3xl border border-[#0a2a66] text-[#0a2a66] transition duration-300 hover:bg-[#0a2a66] hover:text-white">
-                  <MoveRight strokeWidth={"1px"} />
+                <button className="inline-flex items-center justify-center rounded-3xl border border-[#0a2a66] px-[18px] py-[6px] text-[#0a2a66] transition duration-300 hover:bg-[#0a2a66] hover:text-white">
+                  <MoveRight strokeWidth={"1px"} width={19} height={19} />
                 </button>
               </div>
             </div>
