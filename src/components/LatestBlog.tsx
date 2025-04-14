@@ -1,4 +1,4 @@
-// components/LatestBlogs.tsx
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { MoveRight } from "lucide-react";
