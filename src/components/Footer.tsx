@@ -1,37 +1,69 @@
+import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0B2341] px-6 py-12 text-white md:px-16 lg:px-24">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+    <footer className="bg-[#0B2341] px-8 py-12 text-white">
+      <div className="mx-auto grid max-w-[1250px] grid-cols-1 border border-red-900 pb-[85px] md:grid-cols-2 lg:grid-cols-5">
         {/* Logo and Description */}
-        <div>
+        <div className="col-span-2 max-w-[422px] p-[10px]">
           <div className="mb-4 flex items-center space-x-2">
-            <img src="/logo.svg" alt="SMBF Logo" className="h-10 w-10" />
-            <span className="text-2xl font-semibold">SMBF</span>
+            <img
+              width="800"
+              height="267"
+              src="https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white-1024x342.png"
+              className="max-w-[150px]"
+              alt=""
+              decoding="async"
+              srcset="https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white-1024x342.png 1024w, https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white-300x100.png 300w, https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white-768x257.png 768w, https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white-600x201.png 600w, https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white.png 1071w"
+            />
           </div>
           <p className="text-gray-300">
             Supporting Muslim businesses, through ethical and meaningful
             collaboration, to positively impact the world.
           </p>
           <div className="mt-6 flex space-x-4">
-            <a href="#" aria-label="LinkedIn" className="text-white">
-              <i className="fab fa-linkedin text-xl"></i>
+            <a
+              href="https://www.linkedin.com/company/smbf-global/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#2366CD] transition hover:text-blue-700"
+              aria-label="LinkedIn"
+            >
+              <Linkedin color="white" />
             </a>
-            <a href="#" aria-label="Instagram" className="text-white">
-              <i className="fab fa-instagram text-xl"></i>
+            <a
+              href="https://www.instagram.com/smbf____/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#2366CD] transition hover:text-pink-500"
+              aria-label="Instagram"
+            >
+              <Instagram color="white" />
             </a>
-            <a href="#" aria-label="Facebook" className="text-white">
-              <i className="fab fa-facebook text-xl"></i>
+            <a
+              href="https://www.facebook.com/SupportMuslimBusinessForum/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#2366CD] transition hover:text-blue-600"
+              aria-label="Facebook"
+            >
+              <Facebook color="white" />
             </a>
-            <a href="#" aria-label="YouTube" className="text-white">
-              <i className="fab fa-youtube text-xl"></i>
+            <a
+              href="https://youtube.com/@supportmuslimbusinessforum"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#2366CD] transition hover:text-red-600"
+              aria-label="YouTube"
+            >
+              <Youtube color="white" />
             </a>
           </div>
         </div>
 
         {/* Menu */}
-        <div>
+        <div className="p-[10px]">
           <h3 className="mb-4 font-semibold tracking-widest text-white">
             MENU
           </h3>
@@ -58,7 +90,7 @@ const Footer = () => {
         </div>
 
         {/* Links */}
-        <div>
+        <div className="p-[10px]">
           <h3 className="mb-4 font-semibold tracking-widest text-white">
             LINKS
           </h3>
@@ -76,7 +108,7 @@ const Footer = () => {
         </div>
 
         {/* Contact */}
-        <div>
+        <div className="p-[10px]">
           <h3 className="mb-4 font-semibold tracking-widest text-white">
             GET IN TOUCH
           </h3>

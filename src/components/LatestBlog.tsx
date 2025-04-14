@@ -30,7 +30,7 @@ const blogPosts = [
 
 const LatestBlogs: React.FC = () => {
   return (
-    <section className="relative mt-[68px] max-w-[1250px] bg-blue-50 px-4 pb-[120px] pt-16 text-center">
+    <section className="relative mt-[68px] bg-blue-50 px-4 pb-[120px] pt-16 text-center">
       {/* Top curve */}
       <div className="absolute left-0 top-0 w-full overflow-hidden leading-[0]">
         <svg
