@@ -67,6 +67,19 @@ const SmbfSupportSection: React.FC = () => {
           </button>
         </div>
       </div>
+
+      <div className="absolute bottom-100 left-0 w-full overflow-hidden leading-[0]">
+        <svg
+          viewBox="0 0 1440 150"
+          className="w-full h-[100px] rotate-180"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0 C300,100 1140,100 1440,0 L1440,0 L0,0 Z"
+            fill="#ffffff"
+          />
+        </svg>
+      </div>
     </section>
   );
 };
