@@ -2,7 +2,15 @@ import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0B2341] px-8 pt-12 text-white">
+    <footer
+      className="bg-[#0B2341] px-8 pt-12 text-white"
+      style={{
+        backgroundImage: `url('https://smbf.global/wp-content/uploads/2023/07/footer-1.png'), url('https://smbf.global/wp-content/uploads/2023/07/footer-1.png')`,
+        backgroundPosition: "bottom 10% left 70%, bottom 10% left 10%",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
       <div className="mx-auto grid max-w-[1250px] grid-cols-1 pb-[85px] md:grid-cols-2 lg:grid-cols-5">
         {/* Logo and Description */}
         <div className="col-span-2 max-w-[422px] p-[10px]">
@@ -167,7 +175,7 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      <div className="mt-12 text-end font-inter text-[14px] font-normal tracking-[0.05em] text-white">
+      <div className="mt-12 pb-[20px] text-end font-inter text-[14px] font-normal tracking-[0.05em] text-white">
         Copyright SMBF © 2025. All Rights Reserved.
       </div>
     </footer>
