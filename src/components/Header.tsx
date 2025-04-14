@@ -1,6 +1,5 @@
-import React from "react";
+import { ChevronDown } from "lucide-react";
 import Container from "./common/Container";
-import { ArrowDown, ChevronDown } from "lucide-react";
 
 export default function Header() {
   return (
