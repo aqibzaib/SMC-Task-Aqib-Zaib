@@ -6,7 +6,7 @@ const Footer = () => {
       className="bg-[#0B2341] px-8 pt-12 text-white"
       style={{
         backgroundImage: `url('https://smbf.global/wp-content/uploads/2023/07/footer-1.png'), url('https://smbf.global/wp-content/uploads/2023/07/footer-1.png')`,
-        backgroundPosition: "bottom 10% left 70%, bottom 10% left 10%",
+        backgroundPosition: "bottom 10% right 30%, bottom 10% left 10%",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
