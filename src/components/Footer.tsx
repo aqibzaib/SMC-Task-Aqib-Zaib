@@ -1,4 +1,9 @@
-import { Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  YouTubeIcon,
+} from "../assets/icons";
 
 const Footer = () => {
   return (
@@ -22,7 +27,7 @@ const Footer = () => {
               className="max-w-[150px]"
               alt=""
               decoding="async"
-              srcset="https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white-1024x342.png 1024w, https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white-300x100.png 300w, https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white-768x257.png 768w, https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white-600x201.png 600w, https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white.png 1071w"
+              srcSet="https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white-1024x342.png 1024w, https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white-300x100.png 300w, https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white-768x257.png 768w, https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white-600x201.png 600w, https://smbf.global/wp-content/uploads/2023/07/SMBF-Logo-white.png 1071w"
             />
           </div>
           <p className="font-inter text-[16px] text-[#99A2B1] transition duration-300">
@@ -34,37 +39,37 @@ const Footer = () => {
               href="https://www.linkedin.com/company/smbf-global/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#2366CD] transition hover:text-blue-700"
+              className="text-white transition hover:text-[#2366CD]"
               aria-label="LinkedIn"
             >
-              <Linkedin color="white" />
+              <LinkedInIcon className="h-[18px] w-[18px]" />
             </a>
             <a
               href="https://www.instagram.com/smbf____/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#2366CD] transition hover:text-pink-500"
+              className="text-white transition hover:text-[#2366CD]"
               aria-label="Instagram"
             >
-              <Instagram color="white" />
+              <InstagramIcon className="h-[18px] w-[18px]" />
             </a>
             <a
               href="https://www.facebook.com/SupportMuslimBusinessForum/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#2366CD] transition hover:text-blue-600"
+              className="text-white transition hover:text-[#2366CD]"
               aria-label="Facebook"
             >
-              <Facebook color="white" />
+              <FacebookIcon className="h-[18px] w-[18px]" />
             </a>
             <a
               href="https://youtube.com/@supportmuslimbusinessforum"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#2366CD] transition hover:text-red-600"
+              className="text-white transition hover:text-[#2366CD]"
               aria-label="YouTube"
             >
-              <Youtube color="white" />
+              <YouTubeIcon className="h-[18px] w-[18px]" />
             </a>
           </div>
         </div>
