@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "./common/Container";
+import { ArrowDown, ChevronDown } from "lucide-react";
 
 export default function Header() {
   return (
@@ -29,8 +30,8 @@ export default function Header() {
           </a>
 
           <div className="group relative">
-            <span className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] group-hover:text-[#2366CD]">
-              Member Benefits ▾
+            <span className="flex cursor-pointer flex-row items-center font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] group-hover:text-[#2366CD]">
+              Member Benefits <ChevronDown strokeWidth={1.5} />
             </span>
             <ul className="border-grey-50 absolute z-50 mt-2 hidden min-w-[220px] flex-col space-y-3 rounded-lg border bg-white px-4 py-3 opacity-90 shadow-xl group-hover:flex">
               <li>
@@ -68,8 +69,8 @@ export default function Header() {
           </a>
 
           <div className="group relative">
-            <span className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] group-hover:text-[#2366CD]">
-              International Trade ▾
+            <span className="flex cursor-pointer flex-row items-center font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] group-hover:text-[#2366CD]">
+              International Trade <ChevronDown strokeWidth={1.5} />
             </span>
             <ul className="border-grey-10 absolute z-50 mt-2 hidden min-w-[220px] flex-col space-y-3 rounded-lg border bg-white px-4 py-3 opacity-90 shadow-xl group-hover:flex">
               <li>
