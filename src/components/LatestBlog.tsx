@@ -33,7 +33,7 @@ const blogPosts = [
 const LatestBlogs: React.FC = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1700,
     });
   }, []);
   return (

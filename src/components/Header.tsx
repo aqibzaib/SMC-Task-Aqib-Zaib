@@ -33,32 +33,34 @@ export default function Header() {
             <span className="flex cursor-pointer flex-row items-center font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] group-hover:text-[#2366CD]">
               Member Benefits <ChevronDown strokeWidth={1.5} />
             </span>
-            <ul className="border-grey-50 absolute z-50 mt-2 hidden min-w-[220px] flex-col space-y-3 rounded-lg border bg-white px-4 py-3 opacity-90 shadow-xl group-hover:flex">
-              <li>
-                <a
-                  href="/business-membership"
-                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
-                >
-                  Business Membership
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/executive-membership"
-                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
-                >
-                  Executive Membership
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/youth-membership"
-                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
-                >
-                  Youth Membership
-                </a>
-              </li>
-            </ul>
+            <div className="absolute z-50 group-hover:flex">
+              <ul className="border-grey-50 mt-2 hidden min-w-[220px] flex-col space-y-3 rounded-lg border bg-white px-4 py-3 opacity-90 shadow-xl group-hover:flex">
+                <li>
+                  <a
+                    href="/business-membership"
+                    className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
+                  >
+                    Business Membership
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/executive-membership"
+                    className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
+                  >
+                    Executive Membership
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/youth-membership"
+                    className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
+                  >
+                    Youth Membership
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <a
@@ -72,48 +74,50 @@ export default function Header() {
             <span className="flex cursor-pointer flex-row items-center font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] group-hover:text-[#2366CD]">
               International Trade <ChevronDown strokeWidth={1.5} />
             </span>
-            <ul className="border-grey-10 absolute z-50 mt-2 hidden min-w-[220px] flex-col space-y-3 rounded-lg border bg-white px-4 py-3 opacity-90 shadow-xl group-hover:flex">
-              <li>
-                <a
-                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
-                  href="/executive-international-membership"
-                >
-                  Executive Intl. Membership
-                </a>
-              </li>
-              <li>
-                <a
-                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
-                  href="/saudi-arabia-international-trade-programme"
-                >
-                  Saudi Arabia Trade
-                </a>
-              </li>
-              <li>
-                <a
-                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
-                  href="/france-business-delegation-2025"
-                >
-                  France 2025
-                </a>
-              </li>
-              <li>
-                <a
-                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
-                  href="/smbf-turkiye-international-trade-programme"
-                >
-                  Türkiye Trade
-                </a>
-              </li>
-              <li>
-                <a
-                  className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
-                  href="/dubai-business-delegation"
-                >
-                  Dubai 2024
-                </a>
-              </li>
-            </ul>
+            <div className="absolute z-50 group-hover:flex">
+              <ul className="border-grey-10 mt-2 hidden min-w-[220px] flex-col space-y-3 rounded-lg border bg-white px-4 py-3 opacity-90 shadow-xl group-hover:flex">
+                <li>
+                  <a
+                    className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
+                    href="/executive-international-membership"
+                  >
+                    Executive Intl. Membership
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
+                    href="/saudi-arabia-international-trade-programme"
+                  >
+                    Saudi Arabia Trade
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
+                    href="/france-business-delegation-2025"
+                  >
+                    France 2025
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
+                    href="/smbf-turkiye-international-trade-programme"
+                  >
+                    Türkiye Trade
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="cursor-pointer font-[Redtone] text-[16px] font-medium uppercase leading-[1.6em] tracking-[0.1em] text-[#02171F] hover:text-[#2366CD]"
+                    href="/dubai-business-delegation"
+                  >
+                    Dubai 2024
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <a
