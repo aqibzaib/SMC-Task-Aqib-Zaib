@@ -1,4 +1,4 @@
-import AutoPlaySlider from "./components/AutoPlayerSlider";
+import BecomeMember from "./components/BecomeMember";
 import BusinessCommunitySection from "./components/BusinessCommunitySection";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -18,6 +18,7 @@ function App() {
       <Membership />
       <Members />
       <SmbfSupportSection />
+      <BecomeMember />
       <Footer />
     </>
   );
